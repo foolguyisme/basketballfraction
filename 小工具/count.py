@@ -6,14 +6,13 @@ class BasketballScoreboard:
         self.root = root
         self.root.title("籃球計分")
         
-        # 設置兩個玩家的姓名及分數
         self.team1_name = tk.StringVar()
         self.team2_name = tk.StringVar()
         self.team1_score = 0
         self.team2_score = 0
-        self.win_score = tk.IntVar(value=21)  # 預設贏分為21
+        self.win_score = tk.IntVar(value=21)  # 預設贏分
 
-        # 建立輸入框與標籤
+        # 輸入框與標籤
         tk.Label(root, text="隊伍 1 名稱:").grid(row=0, column=0)
         tk.Entry(root, textvariable=self.team1_name).grid(row=0, column=1)
 
